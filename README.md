@@ -1,12 +1,13 @@
-# Viktoriia Balykina — Résumé Site
+# Viktoriia Balykina — Portfolio Site
 
-A single-page personal résumé website, part of my SDET portfolio. It's plain HTML and CSS with no frameworks and no build step.
+A single-page portfolio and résumé website, part of my SDET portfolio. It's plain HTML and CSS with no frameworks and no build step.
 
 ## Structure
 
 ```
 index.html                      # the page
-styles.css                      # styles (light/dark theme, print styles)
+styles.css                      # styles (dark theme, responsive layout, print styles)
+favicon.svg                     # browser tab icon
 .github/workflows/deploy.yml    # GitHub Pages deployment
 ```
 
@@ -28,10 +29,11 @@ Every push to `main` (including merged pull requests) deploys the site to GitHub
 
 One-time setup: in the repository, go to **Settings → Pages → Build and deployment → Source** and select **GitHub Actions**.
 
-The site will be available at `https://<username>.github.io/<repo-name>/`.
+The site is published at https://balykina-viktoriia.github.io/portfolio-site/.
 
 ## Roadmap
 
-- [ ] Fill in About, responsibilities and skills
-- [ ] E2E test suite for this site
+- [x] Page content and design
+- [ ] Describe experience through results, not only responsibilities
+- [ ] First personal project: E2E test suite for this site
 - [ ] Run the tests in CI before deploying
