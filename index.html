@@ -122,10 +122,40 @@
     <section id="projects" class="section" data-testid="section-projects">
       <div class="container">
         <h2 class="section-title">Personal projects</h2>
-        <div class="card empty-state" data-testid="projects-empty">
-          <p class="empty-state-title">Coming soon</p>
-          <p class="muted">Projects will appear here.</p>
-        </div>
+        <article class="card project" data-testid="project">
+          <div class="project-head">
+            <h3 class="project-title" data-testid="project-title">E-commerce E2E Test Suite</h3>
+            <a class="project-badge" href="https://github.com/balykina-viktoriia/ecommerce-e2e-suite/actions/workflows/tests.yml" target="_blank" rel="noopener">
+              <img src="https://github.com/balykina-viktoriia/ecommerce-e2e-suite/actions/workflows/tests.yml/badge.svg?branch=main" alt="CI status of the test suite" height="20">
+            </a>
+          </div>
+          <p class="project-summary">
+            An end-to-end test suite for an online shop, built layer by layer, with a data-quality layer on top.
+            Everything runs with one Docker command and in GitHub Actions, one parallel job per layer.
+          </p>
+          <ul class="job-details" data-testid="project-layers">
+            <li><strong>UI:</strong> Playwright and Page Object Model against saucedemo, with typed test data.</li>
+            <li><strong>API:</strong> CRUD, JSON Schema contracts, headers and negative cases (400, 401, 404, 405, 409, 422).</li>
+            <li><strong>Auth:</strong> storageState per role, a role × endpoint permission matrix, forged and expired tokens.</li>
+            <li><strong>Database:</strong> after each API write, the row is read straight from PostgreSQL and checked.</li>
+            <li><strong>Data quality:</strong> checks across validity, completeness, accuracy, timeliness, consistency and uniqueness. Each check is tested by injecting a defect.</li>
+          </ul>
+          <ul class="chips project-chips">
+            <li>Python</li>
+            <li>Pytest</li>
+            <li>Playwright</li>
+            <li>Requests</li>
+            <li>PostgreSQL</li>
+            <li>pandas</li>
+            <li>FastAPI</li>
+            <li>Docker</li>
+            <li>GitHub Actions</li>
+          </ul>
+          <a class="btn btn--icon" href="https://github.com/balykina-viktoriia/ecommerce-e2e-suite" target="_blank" rel="noopener" data-testid="project-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+            View code on GitHub
+          </a>
+        </article>
       </div>
     </section>
 
